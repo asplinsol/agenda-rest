@@ -10,8 +10,7 @@
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
     "test": "ava ./dist/test.js && npm run format",
-    "start": "npm run dev && node cli.js",
-    "prepublish": "npm run snyk-protect && npm run build"
+    "start": "npm run dev && node cli.js"
   },
   "repository": {
     "type": "git",
