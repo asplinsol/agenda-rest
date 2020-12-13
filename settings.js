@@ -5,10 +5,14 @@ let appId = process.env.API_KEY;
 let collection = "agendaJobs";
 let definitions = "jobDefinitions";
 let timeout = 5000;
+let port = process.env.PORT || 5000;
 
 const settings = {
   get agendaMongoUrl() {
     return dburi ? dburi : `mongodb://${dbhost}/${dbname}`;
+  },
+  get port() {
+    return port;
   },
   get dbname() {
     return dbname;
