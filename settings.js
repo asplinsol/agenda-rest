@@ -5,7 +5,7 @@ let appId = process.env.API_KEY;
 let collection = "agendaJobs";
 let definitions = "jobDefinitions";
 let timeout = 5000;
-let port = process.env.PORT || 5000;
+let port = process.env.PORT || 4040;
 
 const settings = {
   get agendaMongoUrl() {
